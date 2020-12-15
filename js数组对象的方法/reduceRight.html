@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>reduceRight</title>
+</head>
+<body>
+ <h2>reduceRight()方法与reduce()方法计算顺序相反，是从右向左加</h2>
+ <script>
+  let arr=[1,5,6,8]
+  
+  let num=arr.reduceRight((todal,value)=>
+
+todal+value
+ )
+
+ document.write(num)//20
+
+ </script>
+</body>
+</html>

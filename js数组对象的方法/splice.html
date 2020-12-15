@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>splice</title>
+</head>
+<body>
+ 
+ <h2>splice() 方法用于添加或删除数组中的元素。这种方法会改变原始数组。</h2>
+
+ <script>
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.splice(2,0,"Lemon","Kiwi");//在下标为2，不包括2中插入新元素 // document.write(fruits)//["Banana", "Orange","Lemon","Kiwi", "Apple", "Mango"];
+
+fruits.splice(2,2,"Lemon","Kiwi");//在下标为2，不包括2后面先删除两个元素，再插入新元素，
+
+
+
+ </script>
+</body>
+</html>

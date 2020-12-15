@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>forEach</title>
+</head>
+<body>
+ <h2> forEach() 方法用于调用数组的每个元素，并将元素传递给回调函数。
+
+ </h2>
+
+ <script>
+
+let num=[5,7,9,14,17]
+let rut=0
+num.forEach((item ,index)=>{
+ document.write(item>7)//falsefalsetruetruetrue
+ // // document.write("index,",num[index])
+ // // document.write("index,",nindex)
+ document.write("index,",rut+=num[index])
+
+
+})
+
+document.write("求和结果,",rut)
+
+ </script>
+</body>
+</html>

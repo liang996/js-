@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>sort</title>
+</head>
+<body>
+ <h2>sort()方法用于对数组的元素进行排序</h2>
+ <script>
+let arr=[1,8,5,9,10,15]
+
+//正常情况：
+document.write(arr.sort())//[1,10,15,5,8,9]
+
+//上面这个肯定不是我们想要的结果,优化后：
+ //升序；
+		arr.sort((a,b)=> a - b)
+  document.write(arr);//输出  [1,5,8,9,10,15]
+  
+  
+  //降序；
+  let arr1=[1,8,5,9,10,15]
+
+  arr1.sort((a,b)=> b-a)
+
+  document.write(arr1);//输出 [1899, 111, 50, 45, 35, 30, 10]
+
+
+
+let arr1 = ["a", "g", "c", "x", "b", "e"];
+let num = arr1.sort()
+document.write(num)//[ 'a', 'b', 'c', 'e', 'g', 'x' ]
+
+
+ </script>
+</body>
+</html>

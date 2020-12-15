@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>some</title>
+</head>
+<body>
+ <h2>some() 方法用于检测数组中的元素是否满足指定条件（函数提供）。（有一个满足即可）
+  如果有一个元素满足条件，则表达式返回true , 剩余的元素不会再执行检测。
+  如果没有满足条件的元素，则返回false。
+  与every相反（每个都必需满足，结果才为true）
+ </h2>
+ 
+ <script>
+let arr=[2,5,7,9]
+document.write(arr.some((item)=>{//true
+return item>5
+}))
+
+let arr=[2,5,7,9]
+document.write(arr.some((item)=>{//false
+return item>9
+}))
+ </script>
+</body>
+</html>
